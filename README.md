@@ -66,7 +66,7 @@ STUDY_FOLDER
 
 ## To do list
 
-(1) Add references and links to this readme.
-(2) Complete the documentation of sections with < > brackets.
-(3) Path to trimmomatic is hard coded. Make the software to look at path.
-(4) Path to sub scripts is hard coded. Think of best way to handle that. 
+* (1) Add references and links to this readme.
+* (2) Complete the documentation of sections with < > brackets.
+* (3) Path to trimmomatic is hard coded. Make the software to look at path.
+* (4) Path to sub scripts is hard coded. Think of best way to handle that. 
