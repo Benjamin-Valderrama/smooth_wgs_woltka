@@ -16,28 +16,27 @@ The scipts assume micromamba is used to manage different software and the follow
 * (3) woltka
 
 The environments can be created from the files provided in the `envs` folder as follows:
-
-<CODE>
+```CODE```
 
 ## Usage
 
 We look at the help message of the software
-<HELP MESSAGE>
+```HELP MESSAGE```
 
 We could run the analysis of the following microbiome dataset
-<CODE>
+```CODE```
 
 If we already have fastq files, we could run the analysis from an existing directory
-<CODE>
+```CODE```
 
 Each step described in the 'Smooth analysis section' is modular, and can be run independently. If the alignments of DNA to reference microbiome genomes is available, we could just run the community profiling
-<CODE>
-
+```CODE```
 
 ## Output
 
 Below is a schematic of the folder produced after a full run of the software is completed. The software generates the directories and subdirectories to ensure the strucutre is preserved. Only folders relevant for each step of the analysis that was run are generated.
 
+```
 STUDY_FOLDER
 	|
 	|-- 00.rawdata
@@ -61,6 +60,7 @@ STUDY_FOLDER
 	|	|-- functional
 	|
 	|-- 03.modules
+ ```
 
 ### Description of directories and sub-directories
 
