@@ -44,11 +44,15 @@ Optional arguments:
   -h, --help               Display this help message.
 ```
 
+### Run the full workflow
+
 We could easily run the analysis of the microbiome dataset used in this [paper](https://www.nature.com/articles/s41564-018-0306-4), which was made publicly available in ENA under the accession code [PRJNA400072](https://www.ebi.ac.uk/ena/browser/view/PRJNA400072) by running the following line of code
 ```
 nohup bash wgs_smooth_woltka.sh -s franzosa2018 -n PRJNA400072 --run_all --host_genome path/to/host-genome/ --microbiome_genomes path/to/microbiome-genomes/index-prefix > run_all.log &
 ```
 Notice that the path to the indices should be change according to the needs of the user. Additionally, this the project we are working with characterised the gut microbiome of healthy individuals and IBD patients. Therefore, the host genome used to decontaminate the fastq files is a human genome. Many versions of the human genome are available, but I personally use [CHM13v2.0](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009914755.1/), which is a telomer-to-telomer sequenciation of the human genome. After downloading the genome an index should be built, which can be done by bowtie2. 
+
+### Run sections of the workflow
 
 If we already have fastq files, we could run the analysis from an existing directory
 
